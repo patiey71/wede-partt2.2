@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Eco Trend Boutique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-wrap">
+      <div class="brand"><span class="brand-mark"></span>Eco Trend Boutique</div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <nav>
+        <ul id="navList">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="contact">
+      <p class="eyebrow">Get in touch</p>
+      <h1>Visit or reach out</h1>
+
+      <div class="contact-grid" style="margin-top:32px;">
+        <div>
+          <form onsubmit="event.preventDefault(); alert('Thanks — your message has been noted. This form is a demo and does not send live messages.');">
+            <div class="field"><label for="name">Name</label><input id="name" type="text" required></div>
+            <div class="field"><label for="email">Email</label><input id="email" type="email" required></div>
+            <div class="field"><label for="message">Message</label><textarea id="message" required></textarea></div>
+            <button type="submit" class="btn primary">Send message</button>
+          </form>
+        </div>
+        <div>
+          <ul class="info-list">
+            <li><strong>Store</strong>Eco Trend Boutique, your local high street</li>
+            <li><strong>Hours</strong>Monday – Saturday, 9:00 – 18:00</li>
+            <li><strong>Email</strong>hello@ecotrendboutique.example</li>
+            <li><strong>Follow along</strong>Instagram &amp; Facebook @ecotrendboutique</li>
+          </ul>
+          <p class="form-note">Come browse the range online, then visit in store to see, touch, and try.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Eco Trend Boutique — Sustainable living, close to home.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
